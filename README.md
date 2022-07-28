@@ -12,11 +12,13 @@ luna50lb/luna50lb is a ✨ special ✨ repository because its `README.md` (this 
 You can click the Preview link to take a look at your changes.
 --->
 
+
 # よく使うライブラリ
 - pandas
 - numpy
 - scipy
 - matplotlib 
+- others 
 
 # DataFrame
 
@@ -40,4 +42,10 @@ df_x['plus']=pd.to_timedelta(df_x['date'].dt.dayofweek, unit='D')
 df_x['Monday']=df_x['date'] - df_x['plus']
 ```
 
+
+
+# Others
+## OpenCV
+インストール(MacOS)
+`brew install opencv3` あるいは `pip3 isntall opencv-python`だけでも大丈夫かも。
 
