@@ -42,6 +42,16 @@ df_x['plus']=pd.to_timedelta(df_x['date'].dt.dayofweek, unit='D')
 df_x['Monday']=df_x['date'] - df_x['plus']
 ```
 
+# JupyterLab
+## コードのフォールディング
+Settings > Advanced Settings Editor より、 Text Editorタブを選択する。User Preferencesの部分で、editorConfig内部のcodeFoldingをtrueとする。
+```
+{
+    "editorConfig": {
+        "codeFolding": true
+    }
+}
+```
 
 
 # Others
