@@ -18,7 +18,7 @@ You can click the Preview link to take a look at your changes.
 - numpy
 - scipy
 - matplotlib 
-- others 
+- others, psycopg2 
 
 # DataFrame
 
@@ -55,6 +55,18 @@ Settings > Advanced Settings Editor より、 Text Editorタブを選択する�
 
 
 # Others
+## psycopg2
+MacOSへインストールする手順　
+1. brewでpostresqlをインストール 
+2. LDFLAGSとCPPFLAGSの２つを設定
+3. pipでpsycopg2をインストール
+```
+brew install postgresql
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+pip3 install psycopg2
+```
+
 ## OpenCV
 インストール(MacOS)
 `brew install opencv3` あるいは `pip3 isntall opencv-python`だけでも大丈夫かも。
