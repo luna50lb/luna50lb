@@ -19,7 +19,11 @@ sp0.wait()
 print(sp0.returncode)
 ```
 
-
+# ディレクトリ配下の全てのフォルダとファイルを表示
+```
+for currentDirj, listSubDirj, listFilej in os.walk('dirA'):
+    print(currentDirj, listFilej)
+```
 
 # DataFrame
 
