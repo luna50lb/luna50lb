@@ -12,13 +12,14 @@ luna50lb/luna50lb is a ✨ special ✨ repository because its `README.md` (this 
 You can click the Preview link to take a look at your changes.
 --->
 
+# bashコマンドを使用
+```
+sp0=subprocess.Open(args=["rm", "-rf", "dirA"])
+sp0.wait()
+print(sp0.returncode)
+```
 
-# よく使うライブラリ
-- pandas
-- numpy
-- scipy
-- matplotlib 
-- others, psycopg2 
+
 
 # DataFrame
 
@@ -81,3 +82,10 @@ pip3 install psycopg2
 インストール(MacOS)
 `brew install opencv3` あるいは `pip3 isntall opencv-python`だけでも大丈夫かも。
 
+
+# よく使うライブラリ
+- pandas
+- numpy
+- scipy
+- matplotlib 
+- others, psycopg2 
