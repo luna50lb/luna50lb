@@ -69,9 +69,8 @@ Settings > Advanced Settings Editor より、 Text Editorタブを選択する�
 ```
 
 
-# Others
-## psycopg2
-MacOSへインストールする手順　
+# psycopg2
+## MacOSへインストールする手順　
 1. brewでpostresqlをインストール 
 2. LDFLAGSとCPPFLAGSの２つを設定
 3. pipでpsycopg2をインストール
@@ -81,7 +80,28 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 pip3 install psycopg2
 ```
+## DBへの接続とデータ取得
+```
+import psycopg2
+import pandas as pd
+pd.options.display.max_colwidth=110 
 
+conn=psycopg2.connect(dbname='******', user='*****', password='*****', port=*****)
+query_a=""" select * from pg_tables where schemaname='public';"""
+
+with conn:
+    with conn.cursor() as curs:
+        curs.execute(query_a)
+        rec_a = curs.fetchall()
+        df_a=pd.DataFrame(rec_a)
+        print(df_a)
+conn.close()
+```
+
+
+
+
+# Others 
 ## OpenCV
 インストール(MacOS)
 `brew install opencv3` あるいは `pip3 isntall opencv-python`だけでも大丈夫かも。
