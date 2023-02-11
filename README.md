@@ -10,7 +10,7 @@
 
 luna50lb/luna50lb is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
---->
+
 
 # bashコマンドを使用
 ```
@@ -113,3 +113,5 @@ conn.close()
 - scipy
 - matplotlib 
 - others, psycopg2 
+
+--->
